@@ -36,7 +36,6 @@ model = tf.keras.models.load_model("lstm_sentiment_model.h5")
 
 MAX_LEN = 100
 
-
 # Text cleaning function
 def clean_text(text):
     text = text.lower()
