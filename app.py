@@ -1,5 +1,5 @@
 import streamlit as st
-import tensorflow as tf
+import keras
 import numpy as np
 import pickle
 import re
@@ -35,7 +35,7 @@ def load_model_and_tokenizer():
     with open(tokenizer_path, "rb") as handle:
         tokenizer = pickle.load(handle)
 
-    model = tf.keras.models.load_model(model_path)
+    model = tf.keras.models.load_model("C:\Users\acer\OneDrive\Desktop\sentiment analysis\lstm_sentiment_model.h5")
     return tokenizer, model
 
 tokenizer, model = load_model_and_tokenizer()
