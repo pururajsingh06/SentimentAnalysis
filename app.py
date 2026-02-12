@@ -19,7 +19,13 @@ def translate_text_sync(user_input):
     return asyncio.run(inner())
 
 # NLTK stopwords
-nltk.download('stopwords')
+import nltk
+try:
+    stop_words = set(stopwords.words('english'))
+except:
+    nltk.download('stopwords')
+    stop_words = set(stopwords.words('english'))
+
 stop_words = set(stopwords.words('english'))
 
 # Load tokenizer and model
@@ -30,7 +36,6 @@ model = tf.keras.models.load_model("lstm_sentiment_model.h5")
 
 MAX_LEN = 100
 
-translator = Translator()
 
 # Text cleaning function
 def clean_text(text):
