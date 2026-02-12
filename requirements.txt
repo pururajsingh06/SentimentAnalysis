@@ -1,12 +1,8 @@
-streamlit==1.32.2
-transformers==4.38.2
-torch==2.0.1
-sentencepiece==0.1.99
-tensorflow==2.20.0
+streamlit
+transformers
+torch==1.13.1
+sentencepiece
 pandas
 numpy
 scikit-learn
 matplotlib
-
-
-
