@@ -1,8 +1,6 @@
 streamlit
-transformers
-torch==1.13.1
-sentencepiece
-pandas
+tensorflow==2.12.0
 numpy
-scikit-learn
+nltk
 matplotlib
+googletrans==4.0.0-rc1
