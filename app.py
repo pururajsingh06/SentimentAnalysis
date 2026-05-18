@@ -123,11 +123,10 @@ except LookupError:
 # -------------------------------
 # TRANSLATION FUNCTION
 # -------------------------------
+translator = Translator()
+
 def translate_text_sync(user_input):
-    async def inner():
-        async with Translator() as translator:
-            return await translator.translate(user_input, dest="en")
-    return asyncio.run(inner())
+    return translator.translate(user_input, dest="en")
 
 # -------------------------------
 # TEXT CLEANING FUNCTION
