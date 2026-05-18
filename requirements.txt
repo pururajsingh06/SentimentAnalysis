@@ -1,7 +1,7 @@
 streamlit
-keras==3.0.5
-tensorflow-cpu
-numpy
+tensorflow-cpu<2.16
+keras<2.16
+numpy<2.0.0
 nltk
 matplotlib
 googletrans==4.0.0-rc1
