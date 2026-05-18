@@ -1,6 +1,5 @@
 streamlit
-tensorflow-cpu<2.16
-keras<2.16
+tensorflow-cpu
 numpy<2.0.0
 nltk
 matplotlib
